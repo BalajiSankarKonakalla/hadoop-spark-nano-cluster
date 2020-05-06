@@ -1,0 +1,1 @@
+docker build -t datadroits:1.0 -f master-node/Dockerfile .
