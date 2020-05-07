@@ -3,7 +3,6 @@ FROM ubuntu:18.04
 MAINTAINER Balaji Sankar Konakalla <balajisankarkonakalla@gmail.com>
 
 RUN apt-get -y update && apt-get -y install curl
-
 RUN apt-get -y install sudo
 
 # Create datadroits user
@@ -15,7 +14,6 @@ RUN chmod 440 /etc/sudoers
 USER datadroits
 
 RUN cd ~
-
 RUN ["pwd"]
 
 # Install oracle Java
