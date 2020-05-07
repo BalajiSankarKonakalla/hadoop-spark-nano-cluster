@@ -100,4 +100,3 @@ RUN sudo chmod 777 /home/datadroits/init-script.sh
 
 # run init-script
 ENTRYPOINT /home/datadroits/init-script.sh
-	
