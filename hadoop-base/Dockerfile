@@ -82,7 +82,7 @@ RUN echo "export HDFS_NAMENODE_USER=datadroits" >> /home/datadroits/hadoop/etc/h
 RUN echo "export HDFS_DATANODE_USER=datadroits" >> /home/datadroits/hadoop/etc/hadoop/hadoop-env.sh
 RUN echo "export HDFS_SECONDARYNAMENODE_USER=datadroits" >> /home/datadroits/hadoop/etc/hadoop/hadoop-env.sh
 
-# create folders for nodes
+# create folders for nodes and add configuration files
 RUN mkdir -p /home/datadroits/data/nameNode /home/datadroits/data/dataNode /home/datadroits/data/nameNodeSecondary /home/datadroits/data/tmp
 RUN mkdir -p /home/datadroits/hadoop/logs
 ADD configs/core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml

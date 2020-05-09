@@ -1,4 +1,5 @@
-FROM datadroits-base:1.0
+FROM datadroits-hadoop-hive-base:1.0
+# FROM datadroits-base:1.0
 
 MAINTAINER Balaji Sankar Konakalla <balajisankarkonakalla@gmail.com>
 
